@@ -29,12 +29,12 @@ public class CartTest {
     @Test
     void addTwoGMCricketBatToTheCart() {
         Cart cart = new Cart();
-        Product cricketBat = new Product("Hero Ink");
-        Item cricketBats_2 = new Item(cricketBat, 2);
+        Product cricketBat = new Product("GM Cricket Bat");
+        Item twoGMCricketBats = new Item(cricketBat, 2);
 
-        cart.addProduct(cricketBats_2);
+        cart.addProduct(twoGMCricketBats);
 
-        assert (cart.getItems().contains((cricketBats_2)));
+        assert (cart.getItems().contains((twoGMCricketBats)));
     }
 
 }
