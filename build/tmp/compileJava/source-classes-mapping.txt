@@ -1,7 +1,7 @@
-com/thoughtworks/ddd/domain/Cart.java
- com.thoughtworks.ddd.domain.Cart
 com/thoughtworks/ddd/domain/Product.java
  com.thoughtworks.ddd.domain.Product
+com/thoughtworks/ddd/domain/Cart.java
+ com.thoughtworks.ddd.domain.Cart
 com/thoughtworks/ddd/domain/Item.java
  com.thoughtworks.ddd.domain.Item
 com/thoughtworks/ddd/application/Shopping.java

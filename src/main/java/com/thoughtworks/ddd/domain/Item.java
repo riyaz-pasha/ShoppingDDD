@@ -8,4 +8,9 @@ public class Item {
         this.product = product;
         this.quantity = quantity;
     }
+
+    public Item(Product product) {
+        this.product = product;
+        this.quantity = 1;
+    }
 }

@@ -8,22 +8,22 @@ public class CartTest {
     void addIpadProToTheCart() {
         Cart cart = new Cart();
         Product ipadPro = new Product("Ipad Pro");
-        Item ipadPro_1 = new Item(ipadPro, 1);
+        Item item = new Item(ipadPro);
 
-        cart.addProduct(ipadPro_1);
+        cart.addProduct(item);
 
-        assert (cart.getItems().contains((ipadPro_1)));
+        assert (cart.getItems().contains((item)));
     }
 
     @Test
     void addHeroInkPenToTheCart() {
         Cart cart = new Cart();
         Product heroInk = new Product("Hero Ink");
-        Item heroInk_1 = new Item(heroInk, 2);
+        Item item = new Item(heroInk);
 
-        cart.addProduct(heroInk_1);
+        cart.addProduct(item);
 
-        assert (cart.getItems().contains((heroInk_1)));
+        assert (cart.getItems().contains((item)));
     }
 
     @Test
