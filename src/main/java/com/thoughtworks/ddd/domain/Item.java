@@ -10,7 +10,6 @@ public class Item {
     }
 
     public Item(Product product) {
-        this.product = product;
-        this.quantity = 1;
+        this(product, 1);
     }
 }

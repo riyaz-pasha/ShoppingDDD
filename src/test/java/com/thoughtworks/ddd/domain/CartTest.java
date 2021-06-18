@@ -10,7 +10,7 @@ public class CartTest {
         Product ipadPro = new Product("Ipad Pro");
         Item item = new Item(ipadPro);
 
-        cart.addProduct(item);
+        cart.addItem(item);
 
         assert (cart.getItems().contains((item)));
     }
@@ -21,7 +21,7 @@ public class CartTest {
         Product heroInk = new Product("Hero Ink");
         Item item = new Item(heroInk);
 
-        cart.addProduct(item);
+        cart.addItem(item);
 
         assert (cart.getItems().contains((item)));
     }
@@ -32,9 +32,21 @@ public class CartTest {
         Product cricketBat = new Product("GM Cricket Bat");
         Item twoGMCricketBats = new Item(cricketBat, 2);
 
-        cart.addProduct(twoGMCricketBats);
+        cart.addItem(twoGMCricketBats);
 
         assert (cart.getItems().contains((twoGMCricketBats)));
+    }
+
+    @Test
+    void removeItemFromTheCart() {
+        Cart cart = new Cart();
+        Product ipadPro = new Product("Ipad Pro");
+        Item item = new Item(ipadPro);
+
+        cart.addItem(item);
+        cart.removeItem(item);
+
+        assert (!cart.getItems().contains((item)));
     }
 
 }
