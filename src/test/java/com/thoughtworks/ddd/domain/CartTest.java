@@ -49,4 +49,21 @@ public class CartTest {
         assert (!cart.getItems().contains((item)));
     }
 
+    @Test
+    void ShouldReturnAllRemovedItems() {
+        Cart cart = new Cart();
+        Item ipadItem = new Item(new Product("Ipad Pro"));
+        Item twoGMCricketBatsItem = new Item(new Product("GM Cricket Bat"), 2);
+        Item heroInkItem = new Item(new Product("Hero Ink"));
+
+        cart.add(ipadItem);
+        cart.add(twoGMCricketBatsItem);
+        cart.add(heroInkItem);
+        cart.remove(twoGMCricketBatsItem);
+        cart.remove(heroInkItem);
+
+        assert (cart.getRemovedItems().contains(twoGMCricketBatsItem));
+        assert (cart.getRemovedItems().contains(heroInkItem));
+    }
+
 }
