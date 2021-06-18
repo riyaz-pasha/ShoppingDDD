@@ -4,17 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cart {
-    List<Item> items;
+    private List<Item> items;
 
     public Cart() {
         this.items = new ArrayList<>();
     }
 
-    public void addItem(Item item) {
+    public void add(Item item) {
         items.add(item);
     }
 
-    public void removeItem(Item item) {
+    public void remove(Item item) {
         items.remove(item);
     }
 
