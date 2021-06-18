@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.thoughtworks.ddd.domain.CartTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-06-18T11:16:17" hostname="riyazpashas-MacBook-Pro.local" time="0.02">
+  <properties/>
+  <testcase name="addHeroInkPenToTheCart()" classname="com.thoughtworks.ddd.domain.CartTest" time="0.018"/>
+  <testcase name="addIpadProToTheCart()" classname="com.thoughtworks.ddd.domain.CartTest" time="0.0"/>
+  <testcase name="addTwoGMCricketBatToTheCart()" classname="com.thoughtworks.ddd.domain.CartTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
