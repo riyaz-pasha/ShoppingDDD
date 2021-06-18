@@ -2,12 +2,16 @@ package com.thoughtworks.ddd.domain;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.UUID;
 
 public class Cart {
     private List<Item> items;
     private List<Item> removedItems;
+    private UUID id;
 
     public Cart() {
+        id = UUID.randomUUID();
         this.items = new ArrayList<>();
         this.removedItems = new ArrayList<>();
     }
@@ -27,5 +31,18 @@ public class Cart {
 
     public List<Item> getRemovedItems() {
         return removedItems;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Cart)) return false;
+        Cart cart = (Cart) o;
+        return id.equals(cart.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.thoughtworks.ddd.domain.CartTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-06-18T11:59:12" hostname="riyazpashas-MacBook-Pro.local" time="0.168">
+<testsuite name="com.thoughtworks.ddd.domain.CartTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-18T12:59:23" hostname="riyazpashas-MacBook-Pro.local" time="0.015">
   <properties/>
-  <testcase name="ShouldReturnAllRemovedItems()" classname="com.thoughtworks.ddd.domain.CartTest" time="0.13"/>
-  <testcase name="addHeroInkPenToTheCart()" classname="com.thoughtworks.ddd.domain.CartTest" time="0.004"/>
-  <testcase name="addIpadProToTheCart()" classname="com.thoughtworks.ddd.domain.CartTest" time="0.004"/>
-  <testcase name="addTwoGMCricketBatToTheCart()" classname="com.thoughtworks.ddd.domain.CartTest" time="0.004"/>
-  <testcase name="removeItemFromTheCart()" classname="com.thoughtworks.ddd.domain.CartTest" time="0.004"/>
+  <testcase name="ShouldDifferentiateBetweenTwoCarts()" classname="com.thoughtworks.ddd.domain.CartTest" time="0.015"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -66,4 +66,17 @@ public class CartTest {
         assert (cart.getRemovedItems().contains(heroInkItem));
     }
 
+    @Test
+    void ShouldDifferentiateBetweenTwoCarts() {
+        Cart cart1 = new Cart();
+        Cart cart2 = new Cart();
+        Item item1 = new Item(new Product("Ipad"), 1);
+        Item item2 = new Item(new Product("Ipad"), 1);
+
+        cart1.add(item1);
+        cart2.add(item2);
+
+        assert(!cart1.equals(cart2));
+    }
+
 }
