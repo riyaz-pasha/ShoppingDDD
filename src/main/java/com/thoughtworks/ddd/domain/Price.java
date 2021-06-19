@@ -6,8 +6,8 @@ public class Price {
     private Currency currency;
     private Float value;
 
-    public Price(Currency currency, Float value) {
-        this.currency = currency;
+    public Price(Float value) {
+        this.currency = Currency.getInstance("INR");
         this.value = value;
     }
 

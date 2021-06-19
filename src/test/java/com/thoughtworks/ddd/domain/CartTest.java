@@ -3,14 +3,12 @@ package com.thoughtworks.ddd.domain;
 import com.thoughtworks.ddd.domain.service.Pricer;
 import org.junit.jupiter.api.Test;
 
-import java.util.Currency;
-
 public class CartTest {
 
     @Test
     void ShouldAddIpadProToTheCart() {
         Cart cart = new Cart();
-        Product ipadPro = new Product("Ipad Pro", new Price(Currency.getInstance("INR"), 100.00F));
+        Product ipadPro = new Product("Ipad Pro", new Price(100.00F));
         Item item = new Item(ipadPro);
 
         cart.add(item);
@@ -21,7 +19,7 @@ public class CartTest {
     @Test
     void ShouldAddHeroInkPenToTheCart() {
         Cart cart = new Cart();
-        Product heroInk = new Product("Hero Ink", new Price(Currency.getInstance("INR"), 100.00F));
+        Product heroInk = new Product("Hero Ink", new Price(100.00F));
         Item item = new Item(heroInk);
 
         cart.add(item);
@@ -32,7 +30,7 @@ public class CartTest {
     @Test
     void ShouldAddTwoGMCricketBatToTheCart() {
         Cart cart = new Cart();
-        Product cricketBat = new Product("GM Cricket Bat", new Price(Currency.getInstance("INR"), 100.00F));
+        Product cricketBat = new Product("GM Cricket Bat", new Price(100.00F));
         Item twoGMCricketBats = new Item(cricketBat, 2);
 
         cart.add(twoGMCricketBats);
@@ -43,7 +41,7 @@ public class CartTest {
     @Test
     void ShouldRemoveItemFromTheCart() {
         Cart cart = new Cart();
-        Product ipadPro = new Product("Ipad Pro", new Price(Currency.getInstance("INR"), 100.00F));
+        Product ipadPro = new Product("Ipad Pro", new Price(100.00F));
         Item item = new Item(ipadPro);
 
         cart.add(item);
@@ -55,9 +53,9 @@ public class CartTest {
     @Test
     void ShouldReturnAllRemovedItems() {
         Cart cart = new Cart();
-        Item ipadItem = new Item(new Product("Ipad Pro", new Price(Currency.getInstance("INR"), 100.00F)));
-        Item twoGMCricketBatsItem = new Item(new Product("GM Cricket Bat", new Price(Currency.getInstance("INR"), 100.00F)), 2);
-        Item heroInkItem = new Item(new Product("Hero Ink", new Price(Currency.getInstance("INR"), 100.00F)));
+        Item ipadItem = new Item(new Product("Ipad Pro", new Price(100.00F)));
+        Item twoGMCricketBatsItem = new Item(new Product("GM Cricket Bat", new Price(100.00F)), 2);
+        Item heroInkItem = new Item(new Product("Hero Ink", new Price(100.00F)));
 
         cart.add(ipadItem);
         cart.add(twoGMCricketBatsItem);
@@ -73,8 +71,8 @@ public class CartTest {
     void ShouldDifferentiateBetweenTwoCarts() {
         Cart cart1 = new Cart();
         Cart cart2 = new Cart();
-        Item item1 = new Item(new Product("Ipad", new Price(Currency.getInstance("INR"), 100.00F)), 1);
-        Item item2 = new Item(new Product("Ipad", new Price(Currency.getInstance("INR"), 100.00F)), 1);
+        Item item1 = new Item(new Product("Ipad", new Price(100.00F)), 1);
+        Item item2 = new Item(new Product("Ipad", new Price(100.00F)), 1);
 
         cart1.add(item1);
         cart2.add(item2);
