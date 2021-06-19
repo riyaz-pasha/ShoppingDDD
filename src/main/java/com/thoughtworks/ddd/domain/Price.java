@@ -10,4 +10,20 @@ public class Price {
         this.currency = currency;
         this.value = value;
     }
+
+    public Currency getCurrency() {
+        return currency;
+    }
+
+    public Float getValue() {
+        return value;
+    }
+
+    @Override
+    public String toString() {
+        return "Price{" +
+                "currency=" + currency +
+                ", value=" + value +
+                '}';
+    }
 }

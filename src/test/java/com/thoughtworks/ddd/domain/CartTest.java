@@ -1,5 +1,6 @@
 package com.thoughtworks.ddd.domain;
 
+import com.thoughtworks.ddd.service.Pricer;
 import org.junit.jupiter.api.Test;
 
 import java.util.Currency;
@@ -79,6 +80,17 @@ public class CartTest {
         cart2.add(item2);
 
         assert (!cart1.equals(cart2));
+    }
+
+    @Test
+    void ShouldAddProductsWithMinimalPriceToCart() {
+        Cart cart = new Cart();
+        Price discountedPrice = Pricer.getDiscountedPrice("Ipad Pro");
+        Item item = new Item(new Product("Ipad Pro", discountedPrice), 1);
+
+        cart.add(item);
+
+        assert (cart.getItems().contains(item));
     }
 
 }

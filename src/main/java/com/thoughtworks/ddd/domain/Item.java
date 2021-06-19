@@ -12,4 +12,12 @@ public class Item {
     public Item(Product product) {
         this(product, 1);
     }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "product=" + product +
+                ", quantity=" + quantity +
+                '}';
+    }
 }

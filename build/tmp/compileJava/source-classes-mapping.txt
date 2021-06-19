@@ -1,10 +1,12 @@
 com/thoughtworks/ddd/application/Shopping.java
  com.thoughtworks.ddd.application.Shopping
-com/thoughtworks/ddd/domain/Cart.java
- com.thoughtworks.ddd.domain.Cart
+com/thoughtworks/ddd/domain/PriceComparator.java
+ com.thoughtworks.ddd.domain.PriceComparator
 com/thoughtworks/ddd/domain/Product.java
  com.thoughtworks.ddd.domain.Product
-com/thoughtworks/ddd/domain/Item.java
- com.thoughtworks.ddd.domain.Item
 com/thoughtworks/ddd/domain/Price.java
  com.thoughtworks.ddd.domain.Price
+com/thoughtworks/ddd/domain/Cart.java
+ com.thoughtworks.ddd.domain.Cart
+com/thoughtworks/ddd/domain/Item.java
+ com.thoughtworks.ddd.domain.Item
