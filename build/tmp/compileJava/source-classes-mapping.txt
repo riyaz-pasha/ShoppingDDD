@@ -14,3 +14,15 @@ com/thoughtworks/ddd/domain/Cart.java
  com.thoughtworks.ddd.domain.Cart
 com/thoughtworks/ddd/domain/service/CartService.java
  com.thoughtworks.ddd.domain.service.CartService
+com/bank/domain/entity/Address.java
+ com.bank.domain.entity.Address
+com/bank/domain/service/CustomerService.java
+ com.bank.domain.service.CustomerService
+com/bank/domain/events/CustomerAddressUpdated.java
+ com.bank.domain.events.CustomerAddressUpdated
+com/bank/domain/entity/Customer.java
+ com.bank.domain.entity.Customer
+com/bank/domain/service/AccountService.java
+ com.bank.domain.service.AccountService
+com/bank/domain/entity/Account.java
+ com.bank.domain.entity.Account

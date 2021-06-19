@@ -1,2 +1,4 @@
 com/thoughtworks/ddd/domain/CartTest.java
  com.thoughtworks.ddd.domain.CartTest
+com/bank/domain/service/CustomerServiceTest.java
+ com.bank.domain.service.CustomerServiceTest

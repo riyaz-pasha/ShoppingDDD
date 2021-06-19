@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bank.domain.service.CustomerServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-19T09:12:50" hostname="riyazpashas-MacBook-Pro.local" time="0.03">
+  <properties/>
+  <testcase name="ShouldUpdateCustomerAddress()" classname="com.bank.domain.service.CustomerServiceTest" time="0.03"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

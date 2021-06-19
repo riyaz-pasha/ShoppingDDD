@@ -10,7 +10,7 @@ public class CartService {
 
     public Order checkout(Cart cart) {
         Order order = new Order(cart.getItems());
-        cart.checkout();    
+        cart.checkout();
         return order;
     }
 }
