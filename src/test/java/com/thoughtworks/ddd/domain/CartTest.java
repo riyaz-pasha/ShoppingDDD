@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 public class CartTest {
 
     @Test
-    void SHouldAddIpadProToTheCart() {
+    void ShouldAddIpadProToTheCart() {
         Cart cart = new Cart();
         Product ipadPro = new Product("Ipad Pro");
         Item item = new Item(ipadPro);
