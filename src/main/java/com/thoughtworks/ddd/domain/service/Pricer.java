@@ -1,4 +1,4 @@
-package com.thoughtworks.ddd.service;
+package com.thoughtworks.ddd.domain.service;
 
 import com.thoughtworks.ddd.domain.Price;
 

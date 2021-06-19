@@ -1,6 +1,6 @@
 package com.thoughtworks.ddd.domain;
 
-import com.thoughtworks.ddd.service.Pricer;
+import com.thoughtworks.ddd.domain.service.Pricer;
 import org.junit.jupiter.api.Test;
 
 import java.util.Currency;
