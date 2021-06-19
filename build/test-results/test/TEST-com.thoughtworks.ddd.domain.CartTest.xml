@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.thoughtworks.ddd.domain.CartTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-06-19T06:34:33" hostname="riyazpashas-MacBook-Pro.local" time="0.031">
+<testsuite name="com.thoughtworks.ddd.domain.CartTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-19T06:50:19" hostname="riyazpashas-MacBook-Pro.local" time="0.026">
   <properties/>
-  <testcase name="ShouldRemoveItemFromTheCart()" classname="com.thoughtworks.ddd.domain.CartTest" time="0.023"/>
-  <testcase name="ShouldReturnAllRemovedItems()" classname="com.thoughtworks.ddd.domain.CartTest" time="0.001"/>
-  <testcase name="ShouldAddProductsWithMinimalPriceToCart()" classname="com.thoughtworks.ddd.domain.CartTest" time="0.002"/>
-  <testcase name="ShouldAddHeroInkPenToTheCart()" classname="com.thoughtworks.ddd.domain.CartTest" time="0.001"/>
-  <testcase name="ShouldAddTwoGMCricketBatToTheCart()" classname="com.thoughtworks.ddd.domain.CartTest" time="0.001"/>
-  <testcase name="ShouldAddIpadProToTheCart()" classname="com.thoughtworks.ddd.domain.CartTest" time="0.0"/>
-  <testcase name="ShouldDifferentiateBetweenTwoCarts()" classname="com.thoughtworks.ddd.domain.CartTest" time="0.0"/>
+  <testcase name="ShouldCheckoutACartAndCreateAnOrder()" classname="com.thoughtworks.ddd.domain.CartTest" time="0.026"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

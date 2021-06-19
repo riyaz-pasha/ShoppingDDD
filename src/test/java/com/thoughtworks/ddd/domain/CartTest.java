@@ -1,5 +1,6 @@
 package com.thoughtworks.ddd.domain;
 
+import com.thoughtworks.ddd.domain.service.CartService;
 import com.thoughtworks.ddd.domain.service.Pricer;
 import org.junit.jupiter.api.Test;
 
@@ -91,4 +92,17 @@ public class CartTest {
         assert (cart.getItems().contains(item));
     }
 
+    @Test
+    void ShouldCheckoutACartAndCreateAnOrder() {
+        Cart cart = new Cart();
+        Price discountedPrice = Pricer.getDiscountedPrice("Ipad Pro");
+        Item item = new Item(new Product("Ipad Pro", discountedPrice), 1);
+
+        cart.add(item);
+        CartService cartService = new CartService();
+        Order order = cartService.checkout(cart);
+
+        assert (order.getItems().contains(item));
+        assert (cart.isCheckedOut);
+    }
 }

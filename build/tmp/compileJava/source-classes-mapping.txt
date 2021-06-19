@@ -1,7 +1,7 @@
 com/thoughtworks/ddd/domain/service/Pricer.java
  com.thoughtworks.ddd.domain.service.Pricer
-com/thoughtworks/ddd/domain/Cart.java
- com.thoughtworks.ddd.domain.Cart
+com/thoughtworks/ddd/domain/Order.java
+ com.thoughtworks.ddd.domain.Order
 com/thoughtworks/ddd/domain/Product.java
  com.thoughtworks.ddd.domain.Product
 com/thoughtworks/ddd/domain/Item.java
@@ -10,3 +10,7 @@ com/thoughtworks/ddd/application/Shopping.java
  com.thoughtworks.ddd.application.Shopping
 com/thoughtworks/ddd/domain/Price.java
  com.thoughtworks.ddd.domain.Price
+com/thoughtworks/ddd/domain/Cart.java
+ com.thoughtworks.ddd.domain.Cart
+com/thoughtworks/ddd/domain/service/CartService.java
+ com.thoughtworks.ddd.domain.service.CartService

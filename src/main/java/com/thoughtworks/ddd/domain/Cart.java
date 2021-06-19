@@ -9,11 +9,13 @@ public class Cart {
     private List<Item> items;
     private List<Item> removedItems;
     private UUID id;
+    public boolean isCheckedOut;
 
     public Cart() {
         id = UUID.randomUUID();
         this.items = new ArrayList<>();
         this.removedItems = new ArrayList<>();
+        this.isCheckedOut = false;
     }
 
     public void add(Item item) {
@@ -31,6 +33,10 @@ public class Cart {
 
     public List<Item> getRemovedItems() {
         return removedItems;
+    }
+
+    public void checkout() {
+        this.isCheckedOut = true;
     }
 
     @Override
